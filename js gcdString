@@ -1,0 +1,27 @@
+/**
+ * @param {string} str1
+ * @param {string} str2
+ * @return {string}
+ */
+var gcdOfStrings = function(str1, str2) {
+    let output = '';
+
+    if(str1.length>=str2.length){
+        if(str1.includes(str2)){
+            output=str1.substring(str2.length);
+        }
+        else{
+            output="";
+        }
+    }
+    else{
+         if(str2.includes(str2)){
+            output=str2.substring(str1.length);
+         }
+         else{
+             output="";
+         }
+    } 
+return output;
+    
+};
